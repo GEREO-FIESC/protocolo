@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><script type="text/javascript" src="/ruxitagentjs_ICA7NVfgqrux_10333260303165926.js" data-dtconfig="app=fe21bfbaefe7334b|cuc=88037dhn|owasp=1|mel=100000|featureHash=ICA7NVfgqrux|lastModification=1775563421037|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICA7NVfgqrux_10333260303165926.js|reportUrl=/rb_bf62475kpy|rid=RID_1206239425|rpid=447846470|domain=correios.com.br"></script><link rel="stylesheet" href="/jakarta.faces.resource/theme.css.jsf?ln=primefaces-saga-blue&amp;v=15.0.13" /><link rel="stylesheet" href="/jakarta.faces.resource/primeicons/primeicons.css.jsf?ln=primefaces&amp;v=15.0.13" /><link rel="stylesheet" href="/jakarta.faces.resource/layout.css.jsf?ln=css" /><link rel="stylesheet" href="/jakarta.faces.resource/primefaces-custom.css.jsf?ln=css" /><script src="/jakarta.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=15.0.13"></script><script src="/jakarta.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=15.0.13"></script><script src="/jakarta.faces.resource/core.js.jsf?ln=primefaces&amp;v=15.0.13"></script><link rel="stylesheet" href="/jakarta.faces.resource/components.css.jsf?ln=primefaces&amp;v=15.0.13" /><script src="/jakarta.faces.resource/components.js.jsf?ln=primefaces&amp;v=15.0.13"></script><script src="/jakarta.faces.resource/inputmask/inputmask.js.jsf?ln=primefaces&amp;v=15.0.13"></script><link rel="stylesheet" href="/jakarta.faces.resource/calendar/calendar.css.jsf?ln=primefaces&amp;v=15.0.13" /><script src="/jakarta.faces.resource/calendar/calendar.js.jsf?ln=primefaces&amp;v=15.0.13"></script><script src="/jakarta.faces.resource/faces.js.jsf?ln=jakarta.faces&amp;stage=Development"></script><script src="/jakarta.faces.resource/locale-primefaces.js.jsf?ln=js"></script><link rel="stylesheet" href="/jakarta.faces.resource/primefaces-datatable-custom.css.jsf?ln=css" /><script src="/jakarta.faces.resource/locales/locale-pt.js.jsf?ln=primefaces&amp;v=15.0.13"></script><script>if(window.PrimeFaces){PrimeFaces.settings={locale:'pt_BR',viewId:'/consultarfatura/pesquisar-fatura.xhtml',contextPath:'',cookiesSecure:false,cookiesSameSite:'Strict',validateEmptyFields:true,considerEmptyStringNull:true,projectStage:'Development',errorPages:{'':'/erro.jsf?jfwid=875a2774-9c8d-486b-a20d-591c14cf373a:1','jakarta.faces.application.ViewExpiredException':'/erro.jsf?jfwid=875a2774-9c8d-486b-a20d-591c14cf373a:1'}};}</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" href="/jakarta.faces.resource/favicon.ico.jsf?ln=img" type="image/x-icon" /></head><body>
+	<script type="text/javascript">
+		function showStatus() {
+			PF('statusDialog').show();
+		}
+		
+		function hideStatus() {
+			PF('statusDialog').hide();
+		}
+        window.location.hash = "no-back-button";
+        window.location.hash = "Again-No-back-button";//again because google chrome don't insert first hash into history
+
+        window.onhashchange = function() {
+            window.location.hash = "no-back-button";
+        }
+    </script>
+	
+	<div class="ambient">Ambiente: PRODUCAO</div>
+	
+	<div class="acessibilidade">
+		<ul>
+			<li class="tocontent"><span class="separator-bar"></span><a href="#conteudo" title="Ir para o conteúdo principal da página">Pular para o conteúdo</a></li>
+			<li class="font-plus"><a id="biggerFont" href="" title="Aumentar o tamanho da fonte do texto">A</a></li>
+			<li><span class="separator-dot"></span><a id="defaultFont" href="" title="Retornar a fonte do texto para tamanho padrão">Texto no tamanho padrão</a><span class="separator-dot"></span></li>
+			<li class="font-minus"><a href="" id="smallerFont">A</a></li>
+			<li class="contrast"><a id="contrast" href="" title="Modificar para o modo de alto contraste">Contraste</a><span class="separator-bar"></span></li>
+		</ul>
+	</div>
+	
+	<div class="wrap">
+<form id="j_idt13" name="j_idt13" method="post" action="/consultarfatura/pesquisar-fatura.jsf?jfwid=875a2774-9c8d-486b-a20d-591c14cf373a:1" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt13" value="j_idt13" />
+
+	
+	<div class="header">
+		<h1>
+			<a href="/index.jsp">
+				<img src="/jakarta.faces.resource/layout/logo.png.jsf?ln=img" alt="ECT - Empresa Brasileira de Correios e Telégrafos" width="160" />
+			</a>
+		</h1>
+        <div class="acesso_rapido">
+           	<div class="text-right">	
+               	<span><a href="#" onclick="javascript:alert('Versão: 2.0.010');">Sobre o sistema</a></span>
+				<span><a href="http://www.correios.com.br" target="_blank">Portal Correios</a></span>
+				<span><a href="https://apps2.correios.com.br/faleconosco/app/cadastro/suporte/index.php" target="_blank">Fale Conosco</a></span>
+						<span><a href="https://apps.correios.com.br/idCorreios" target="_blank">idCorreios</a></span>
+				
+			</div>
+			<span class="float-right">
+				
+			</span>
+		</div>
+		<div class="ident">
+			<span class="name">FEDERACAO DAS IND EST SANTA CATARINA</span> - [Gestor do Centro de Custo, Gestor do Contrato] - 
+		</div>
+	</div><input type="hidden" name="jakarta.faces.ViewState" id="j_id1:jakarta.faces.ViewState:0" value="-6153900882019932196:776431613875693099" autocomplete="off" /><input type="hidden" name="jakarta.faces.ClientWindow" id="j_id1:jakarta.faces.ClientWindow:0" value="875a2774-9c8d-486b-a20d-591c14cf373a:1" autocomplete="off" />
+</form>
+	
+		<div class="mainContainer">
+
+	<h2>SFE - Sistema de Fatura Eletrônica </h2>
+	<div class="shortMenu">
+		<a href="/inicio/inicio.jsf" title="Início">
+			<img src="/jakarta.faces.resource/layout/trans.gif.jsf?ln=img" width="22px" height="22px" class="inic" />
+			Início</a>
+		<a href="/sair" title="Sair do Sistema">
+			Sair
+			<img src="/jakarta.faces.resource/layout/trans.gif.jsf?ln=img" width="22px" height="22px" class="sair" />
+		</a>
+	</div>
+<form id="menuPrincipal" name="menuPrincipal" method="post" action="/consultarfatura/pesquisar-fatura.jsf?jfwid=875a2774-9c8d-486b-a20d-591c14cf373a:1" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuPrincipal" value="menuPrincipal" />
+
+		
+		<div class="menu">
+			
+			<ul>
+					<li><a href="/vincularContratosCentroCusto/pesquisarVinculacaoUsuarios.jsf">Usuários</a></li>
+					<li>Consultas
+						<ul>
+							<li><a href="/consultarContrato/consultarContrato.jsf">Contrato</a></li>
+							<li><a href="/consultarfatura/pesquisar-fatura.jsf">Fatura</a></li>
+							<li><a href="/consultarpreviadefatura/consultarPreviaFatura.jsf">Prévia de Fatura</a></li>
+							<li><a href="/consultarlimitecredito/consultarLimiteCredito.jsf">Limite de Crédito</a></li>
+						</ul> 
+					</li>				
+					<li>Arquivos
+						<ul>
+							<li><a id="menuPrincipal:extrato_fatura" name="menuPrincipal:extrato_fatura" href="/gerarextratoflexivelfatura/extratoflexivel.jsf">Extrato da Fatura</a></li>
+							<li><a id="menuPrincipal:downloads" name="menuPrincipal:downloads" href="/efetuardownloadviaweb/downloadarquivo.jsf">Downloads</a></li>
+						</ul> 
+					</li>
+				
+				<li>Boletos
+					<ul>
+							<li><a href="/imprimirboleto/pesquisarImprimirBoleto.jsf">Impressão de Boleto</a></li>
+							<li><a href="/consultarboleto/pesquisarBoleto.jsf">Geração de Novo Boleto</a></li>
+						
+						<li><a href="/conveniados/emitir-boleto-conveniado.jsf">Impressão de Boletos - Acordos</a></li>
+					</ul> 
+				</li>
+			</ul>
+			
+		</div><input type="hidden" name="jakarta.faces.ViewState" id="j_id1:jakarta.faces.ViewState:1" value="-6153900882019932196:776431613875693099" autocomplete="off" /><input type="hidden" name="jakarta.faces.ClientWindow" id="j_id1:jakarta.faces.ClientWindow:1" value="875a2774-9c8d-486b-a20d-591c14cf373a:1" autocomplete="off" />
+</form>
+			
+			<a name="conteudo"></a>
+			<div class="content"><div id="j_idt111" style="display:none"></div><script id="j_idt111_s">$(function(){PrimeFaces.cw("AjaxExceptionHandler","widget_j_idt111",{id:"j_idt111",exceptionType:"java.lang.Throwable",update:"errorDialog",onexception:function(errorName, errorMessage){PF('errorDialog').show()}});});</script><div id="j_idt112"></div><script id="j_idt112_s">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt112",{id:"j_idt112",delay:0,start:function(){PF('statusDialog').show();},complete:function(xhr,settings,args){PF('statusDialog').hide();}});});</script><div id="statusDialog" class="ui-dialog ui-widget ui-widget-content  ui-shadow ui-hidden-container ajaxStatus" style="display:none"><div class="ui-dialog-content ui-widget-content" id="statusDialog_content"><img id="j_idt113" src="../resources/img/layout/gif_aguarde.gif?pfdrid_c=true" alt="" width="30px" height="30px" />aguarde...
+		        </div></div><script id="statusDialog_s">$(function(){PrimeFaces.cw("Dialog","statusDialog",{id:"statusDialog",draggable:false,resizable:false,modal:true});});</script><div id="errorDialog" class="ui-dialog ui-widget ui-widget-content  ui-shadow ui-hidden-container" style="display:none"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix"><span id="errorDialog_title" class="ui-dialog-title">Exception '' occured!</span><a href="#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content" id="errorDialog_content">
+					Mensagens:  <br />
+            		StackTrace:  <br /></div></div><script id="errorDialog_s">$(function(){PrimeFaces.cw("Dialog","errorDialog",{id:"errorDialog",draggable:false,resizable:false,modal:true,width:"715",height:"500"});});</script>
+				
+				<div class="breadCrumb">Consultas &gt; <span style="font-weight: bold;">Fatura</span>
+				</div>
+				<h3>Fatura</h3>
+				<h4></h4>
+        <script>        	       	
+            $(document).ready(function () {
+                //efeito azul do contorno dos inputs
+                $('input[type="text"], select').focus(function () {
+                    $(this).addClass("focused");
+                });
+                $('input[type="text"], select').blur(function () {
+                    $(this).removeClass("focused");
+                });
+
+                //controla o foco nas linhas das tabelas.
+                $('table tr').hover(
+                    function () {
+                        $(this).addClass("focused");
+                    },
+                    function () {
+                        $(this).removeClass("focused");
+                    }
+                );
+
+
+            });
+            
+            
+        </script>
+<form id="form" name="form" method="post" action="/consultarfatura/pesquisar-fatura.jsf?jfwid=875a2774-9c8d-486b-a20d-591c14cf373a:1" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="form" value="form" />
+
+
+            <fieldset class="formSearch">
+                <h4>Pesquisar Fatura</h4>
+                <p class="notas">(*) Os campos assinalados são obrigatórios</p>
+
+                <label>
+                    CNPJ
+                    
+                    <br /><input id="form:cnpj" name="form:cnpj" type="text" value="83.873.877/0001-14" readonly="readonly" onchange="PrimeFaces.ab({s:&quot;form:cnpj&quot;,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:cnpj&quot;,u:&quot;form&quot;});" class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-state-readonly f5col" /><script id="form:cnpj_s">$(function(){PrimeFaces.cw("InputMask","widget_form_cnpj",{id:"form:cnpj",mask:"**.***.***\/****\-**",autoClear:false});});</script>
+                </label>
+                <label>
+                    AN8 (ERP)
+                    
+                    <br /><input id="form:an8" name="form:an8" type="text" value="393510" readonly="readonly" title="Cadastro Geral ECT" onchange="PrimeFaces.ab({s:&quot;form:an8&quot;,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:an8&quot;,u:&quot;form&quot;});" class="ui-inputfield ui-inputmask ui-widget ui-state-default ui-state-readonly f3col" /><script id="form:an8_s">$(function(){PrimeFaces.cw("InputMask","widget_form_an8",{id:"form:an8",mask:"999999[99]",placeholder:"",autoClear:false});});</script>
+                </label>
+                <label>
+                    Razão Social<br /><input id="form:razaoSocial" type="text" name="form:razaoSocial" value="FEDERACAO DAS INDUSTRIAS DO ESTADO DE SC" class="f8col" readonly="readonly" />
+                </label>
+
+                <div class="separator"></div>
+
+                <label>
+                    Contrato
+                    
+                    <br /><select id="form:contrato" name="form:contrato" class="f5col" size="1" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:contrato&quot;,u:&quot;form&quot;});">	<option value="">Todos</option>
+	<option value="9912336464  ">9912336464   - Ativo</option>
+	<option value="0068001075  ">0068001075   - Cancelado</option>
+	<option value="9912177672  ">9912177672   - Cancelado</option>
+	<option value="9912225952  ">9912225952   - Cancelado</option>
+</select>
+                </label>
+                <label>
+                    DR<br /><select id="form:drCombo" name="form:drCombo" class="f3col" size="1" title="Unidade da Federação" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:drCombo&quot;,u:&quot;form&quot;});">	<option value="">Todos</option>
+	<option value="SE/SC                         ">SE/SC                         </option>
+</select>
+                </label>
+                <label>
+                    Centro de Custos
+                    
+                    <br /><select id="form:centroCustos" name="form:centroCustos" class="f8col" size="1" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:centroCustos&quot;,u:&quot;form&quot;});">	<option value="" selected="selected">Todos</option>
+	<option value="393510">393510 - FEDERACAO DAS INDUSTRIAS DO ESTADO DE SC</option>
+	<option value="7995594">7995594 - CC FIESC ADF ADMINISTRATIVA E FINANCEIRA</option>
+	<option value="7995742">7995742 - CC FIESC CES ASSES CAMAR ESPECIALIZADAS </option>
+	<option value="7996096">7996096 - CC FIESC IMP ASSESSORIA DE IMPRENSA     </option>
+	<option value="7996163">7996163 - CC FIESC JUR ASSESSORIA JURIDICA        </option>
+	<option value="7996243">7996243 - CC FIESC ALT ASSUNTOS LEGISL TRIBUTARIO </option>
+	<option value="7996310">7996310 - CC FIESC CEV CENTRO DE EVENTOS          </option>
+	<option value="7996465">7996465 - CC FIESC COI COMPETITIVIDADE INDUSTRIAL </option>
+	<option value="7996554">7996554 - CC FIESC MKT COMUNICACAO E MARKETING    </option>
+	<option value="7996673">7996673 - CC FIESC COA CONTROLADORIA E AUDITORIA  </option>
+	<option value="7996778">7996778 - CC FIESC DEA DESENVOLVIMENTO ASSOCIATIVO</option>
+	<option value="7996859">7996859 - CC FIESC DTE DIRETOR TESOUREIRO         </option>
+	<option value="7996949">7996949 - CC FIESC DAF DIRETORIA ADMIN FINANCEIRA </option>
+	<option value="7997049">7997049 - CC FIESC DRI DIR RELACOES INDUSTRIAIS   </option>
+	<option value="7997212">7997212 - CC FIESC GER FIESC GERAL                </option>
+	<option value="7997285">7997285 - CC FIESC MID GESTAO INTEGRADA DE MIDIA  </option>
+	<option value="7997338">7997338 - CC FIESC INT INTEGRAC INTERNACIONAL CIN </option>
+	<option value="7997426">7997426 - CC FIESC PEI POLITICA ECONOM INDUSTRIAL </option>
+	<option value="7997481">7997481 - CC FIESC PRE PRESIDENCIA                </option>
+	<option value="7998282">7998282 - CC FIESC RTR RELACOES DO TRABALHO       </option>
+	<option value="7998474">7998474 - CC FIESC SEP SECRETARIA DA PRESIDENCIA  </option>
+	<option value="7998743">7998743 - CC FIESC ARE UNID INTEGRADA ARRECADACAO </option>
+	<option value="7998795">7998795 - CC FIESC NGP UNID INTEGR GESTAO PESSOAS </option>
+	<option value="7998887">7998887 - CC FIESC TRA UNID INTEGRADA TRANSPORTE  </option>
+	<option value="7998970">7998970 - CC FIESC TIC UNID INTEGR TECN INFORMACAO</option>
+	<option value="7998995">7998995 - CC FIESC COF COFEM                      </option>
+</select>
+                </label>
+
+                <div class="separator"></div>
+
+                <label>
+                    Fatura<br /><input id="form:fatura" type="text" name="form:fatura" value="" class="f5col" onchange="PrimeFaces.ab({s:this,e:&quot;change&quot;,f:&quot;form&quot;,p:&quot;form:fatura&quot;,u:&quot;form&quot;});" />
+                </label>
+
+                <div class="separator"></div>
+
+                <label>
+                    Status da Fatura
+                    
+                    <br /><select id="form:statusFatura" name="form:statusFatura" class="f5col" size="1" onchange="PrimeFaces.ab({s:this,e:&quot;valueChange&quot;,f:&quot;form&quot;,p:&quot;form:statusFatura,form:dataInicialVencimento,form:dataFinalVencimento&quot;,u:&quot;form:dataInicialVencimento,form:dataFinalVencimento&quot;});">	<option value="T">Todos</option>
+	<option value="Z">Acordo Judicial</option>
+	<option value="A">Em Aberto</option>
+	<option value="H">Em Análise</option>
+	<option value="G">Em Cartório</option>
+	<option value="D">Cobr. Judicial</option>
+	<option value="PG">Paga</option>
+	<option value="PC">Parcelada</option>
+</select>
+                </label>
+
+
+
+                <div class="separator"></div>
+
+                <label>
+                    Data Inicial de Vencimento
+                    
+                    <br /><span id="form:dataInicialVencimento" class="ui-calendar f2col"><input id="form:dataInicialVencimento_input" name="form:dataInicialVencimento_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-state-readonly" role="combobox" aria-autocomplete="none" aria-haspopup="dialog" aria-expanded="false" aria-controls="form:dataInicialVencimento_panel" readonly="readonly" /></span><script id="form:dataInicialVencimento_s">$(function(){PrimeFaces.cw("Calendar","widget_form_dataInicialVencimento",{id:"form:dataInicialVencimento",popup:true,locale:"pt",dateFormat:"dd\/mm\/yy",readonly:true,mask:"99\/99\/9999"});});</script>
+
+                </label>
+
+                <label>
+                    Data Final de Vencimento
+                    
+                    <br /><span id="form:dataFinalVencimento" class="ui-calendar f5col"><input id="form:dataFinalVencimento_input" name="form:dataFinalVencimento_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-state-readonly" role="combobox" aria-autocomplete="none" aria-haspopup="dialog" aria-expanded="false" aria-controls="form:dataFinalVencimento_panel" readonly="readonly" /></span><script id="form:dataFinalVencimento_s">$(function(){PrimeFaces.cw("Calendar","widget_form_dataFinalVencimento",{id:"form:dataFinalVencimento",popup:true,locale:"pt",dateFormat:"dd\/mm\/yy",readonly:true,mask:"dd\/mm\/yyyy"});});</script>
+
+                </label>
+
+                <div class="separator"></div>
+
+                <div class="fldBtns"><input id="form:btnPesquisar" type="submit" name="form:btnPesquisar" value="Pesquisar" style="margin: 10px; padding: 0px;" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,f:&quot;form&quot;,p:&quot;form&quot;,u:&quot;form&quot;});;return false" /><input id="form:btnLimpar" type="submit" name="form:btnLimpar" value="Limpar" style="margin: 10px; padding: 0px;" onclick="PrimeFaces.ab({s:this,e:&quot;action&quot;,f:&quot;form&quot;,p:&quot;form:btnLimpar&quot;,u:&quot;form&quot;});;return false" />
+                </div>
+
+            </fieldset><input type="hidden" name="jakarta.faces.ViewState" id="j_id1:jakarta.faces.ViewState:2" value="-6153900882019932196:776431613875693099" autocomplete="off" /><input type="hidden" name="jakarta.faces.ClientWindow" id="j_id1:jakarta.faces.ClientWindow:2" value="875a2774-9c8d-486b-a20d-591c14cf373a:1" autocomplete="off" />
+</form>
+				
+			</div>
+			
+			<div class="footer">SFE - Versão: 2.0.010 - Política de Privacidade e notas legais - © Copyright 2012 Correios - Todos os direitos reservados</div>
+		
+		</div>
+		
+	</div><script src="/jakarta.faces.resource/ppj.js.jsf?ln=js"></script></body>
+	
+</html><script id="f5_cspm">(function(){var f5_cspm={f5_p:'FCJAFJLBLOMLKPPICEPHOONOHBJFGJBJGIHJBAABMLECFBFKPICKGFFJCFDCJKEMHOPBHHJJFGEFAENGDDLACBMIAOOIEABCKNAFJLECHMEMNJMIGKDGGJBEHMHAGLCL',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1524230307aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
