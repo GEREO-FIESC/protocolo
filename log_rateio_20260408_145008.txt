@@ -1,2 +1,0 @@
-2026-04-08 14:50:08,219 - INFO - Aplicação iniciada.
-2026-04-08 14:50:15,630 - INFO - Aplicação encerrada.
